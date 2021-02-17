@@ -67,5 +67,5 @@ def make_save_lineplot(x_col, y_col, x_col_name, y_col_name, title, new_title):
 make_save_lineplot("dates_datetime", "new_cases_per_cap_past_7_days",
                    'Date', 
                     'New Cases Per Cap Past 7 Days',
-                    "Number of New Cases in Westchester,NY Over Past 7 Days (Per 100,000 People)", 
+                    "Number of New Cases in Westchester, NY Over Past 7 Days (Per 100,000 People)", 
                    'Plot_of_New_Cases_Per_Past_7_Days.png')
