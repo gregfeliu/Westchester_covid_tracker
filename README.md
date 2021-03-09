@@ -29,7 +29,7 @@ The accumulative cases show periods in which the total count is "stable" and gro
 The data can be generated using a single script (retrieve_update_data.py in the scripts folder). 
 
 **Note** 
-This project assume that you have the same file structure that I did when creating it. The important parts are the the github notebook is outside the folder that houses the script/notebooks. Additionally, it assumes that there is an "images" folder that is outside the dirextory that houses the script/notebooks.
+This project assume that you have the same file structure that I did when creating it. The important parts are the the github notebook is outside the folder that houses the script/notebooks. Additionally, it assumes that there is an "images" folder that is outside the directory that houses the script/notebooks.
 
 ## Technologies used
 - Jupyter Notebook
