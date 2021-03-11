@@ -3,7 +3,7 @@
 
 
 # Imports
-import git
+from git import Repo
 import pandas as pd
 import seaborn as sns
 sns.set_style("dark")
@@ -11,11 +11,12 @@ sns.set(font_scale=1.25)
 import numpy as np
 import warnings
 warnings.filterwarnings('ignore')
+from PIL import Image 
 
 
 
 # Update the data from the source https://github.com/nytimes/covid-19-data 
-repo = git.Repo('../covid-19-data')
+repo = Repo('../covid-19-data')
 repo.remotes.origin.pull()
 
 # Engineer the data
@@ -69,3 +70,6 @@ make_save_lineplot("dates_datetime", "new_cases_per_cap_past_7_days",
                     'New Cases Per Cap Past 7 Days',
                     "Number of New Cases in Westchester, NY Over Past 7 Days (Per 100,000 People)", 
                    'Plot_of_New_Cases_Per_Past_7_Days.png')
+# show the image
+im = Image.open(r"../images/Plot_of_New_Cases_Per_Past_7_Days.png")   
+im.show()  
